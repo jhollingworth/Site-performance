@@ -1,0 +1,8 @@
+
+login/
+venues/offers/?l=1
+location/reviews/?l=1
+location/cuisines/?l=1
+location/content/?l=3615
+search/?term=test
+venue/?id=1313

@@ -6,21 +6,20 @@ require File.dirname(__FILE__) + '/../lib/site_performance_tester'
 describe "When I run the test" do
 
   before(:all) do
-    @downloader = mock('Downloader')
-    @downloader.expects(:download_time_for).with('http://foo.com/a').returns(1)
-    @downloader.expects(:download_time_for).with('http://foo.com/b').returns(2)
-    @downloader.expects(:download_time_for).with('http://foo.com/c').returns(3)
-    @downloader.expects(:download_time_for).with('http://foo.com/d').returns(4)
-    @tester = SitePerformanceTester.new(@downloader, File.dirname(__FILE__))
-    @results = @tester.run
+    @executor = mock('Executor')
+    @url = lambda { |sub_domain| "http://foo.com/#{sub_domain}" }
+    command = lambda { |sub_domain| "../tools/ab.exe -n 2 -c 5 #{@url.call(sub_domain)}" }
+    output = lambda { |time| "Time per request:       #{time} [ms] (mean)\nTime per request:       #{time} [ms] (mean, across all concurrent requests)" }
+
+    @executor.expects(:execute).with(command.call('a')).returns(output.call(1))
+    @executor.expects(:execute).with(command.call('b')).returns(output.call(2))
+    @tester = SitePerformanceTester.new(@executor, File.dirname(__FILE__))
+    @results = @tester.run 2, "http://foo.com/"
   end
 
- it "should get times back for each url" do
-   @results.length.should == 4
-   @results['http://foo.com/a'].should == 1
-   @results['http://foo.com/b'].should == 2
-   @results['http://foo.com/c'].should == 3
-   @results['http://foo.com/d'].should == 4
+  it "should get times back for each url" do
+   @results.length.should == 2
+   @results[0].should == [@url.call('a'), "1", "1"]
+   @results[1].should == [@url.call('b'), "2", "2"]
  end
-  
 end

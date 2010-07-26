@@ -1,0 +1,22 @@
+require 'rubygems'
+require 'rake'
+require 'term/ansicolor'
+require 'win32console'
+require 'Yaml'
+require File.dirname(__FILE__) + '/lib/site_performance_tester'
+
+include Term::ANSIColor
+
+
+task :default  => [:run_tests]
+
+task :run_tests do 
+  puts "Running performance tests".green
+  env = ENV['env']
+  raise "Must specify the environment".red if env.nil?
+  config = YAML.load(File.read(File.dirname(__FILE__) + '/config.yaml'))
+  raise "Unknown environment" if !config['url'].key?(env)
+  url = "http://#{config['url'][env]}/"
+  SitePerformanceTester.new().run(5, url)
+  puts "Finished performance tests".green
+end

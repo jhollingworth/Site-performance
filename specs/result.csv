@@ -1,5 +1,9 @@
 url,download time
 http://foo.com/a,1
+http://foo.com/a,1
+http://foo.com/b,2
 http://foo.com/b,2
 http://foo.com/c,3
+http://foo.com/c,3
+http://foo.com/d,4
 http://foo.com/d,4
