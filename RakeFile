@@ -4,6 +4,8 @@ require 'term/ansicolor'
 require 'win32console'
 require 'Yaml'
 require File.dirname(__FILE__) + '/lib/site_performance_tester'
+require File.dirname(__FILE__) + '/lib/log'
+
 
 include Term::ANSIColor
 
@@ -11,12 +13,33 @@ include Term::ANSIColor
 task :default  => [:run_tests]
 
 task :run_tests do 
-  puts "Running performance tests".green
+  Log.message "Running performance tests"
   env = ENV['env']
   raise "Must specify the environment".red if env.nil?
   config = YAML.load(File.read(File.dirname(__FILE__) + '/config.yaml'))
   raise "Unknown environment" if !config['url'].key?(env)
   url = "http://#{config['url'][env]}/"
   SitePerformanceTester.new().run(5, url)
-  puts "Finished performance tests".green
+  Log.message "Finished performance tests"
+end
+
+
+task :graph_configs do
+  config = YAML.load(File.read(File.dirname(__FILE__) + '/config.yaml'))
+  lines = File.read(File.dirname(__FILE__) + '/lib/urls.txt').split(/\n/)
+
+  output = ""
+
+  output += "<custom-graphs>\n"
+  config['build_id'].each do |env, build_id|
+    output += "\t<graph title='#{env} page speed benchmarks'>\n"
+    lines.each do |line|
+      title = line.split(',')[1]
+      output += "\t\t<valueType key='#{title}' title='Download speed of #{title} page (ms)' buildTypeId='#{build_id}' />\n"
+    end
+    output += "\t</graph>\n"
+
+  end
+    output += "</custom-graphs>\n"
+  puts output
 end

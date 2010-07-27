@@ -1,8 +1,8 @@
-
-login/
-venues/offers/?l=1
-location/reviews/?l=1
-location/cuisines/?l=1
-location/content/?l=3615
-search/?term=test
-venue/?id=1313
+ ,home
+login/,login
+venues/offers/?l=1,offers
+location/reviews/?l=1,reviews
+location/cuisines/?l=1,cuisines
+location/content/?l=3615,content
+search/?term=test,search
+venue/?id=1313,venue

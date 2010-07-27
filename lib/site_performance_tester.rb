@@ -15,17 +15,17 @@ class SitePerformanceTester
   def run(times, base_url)
 	Log.message("Base url #{base_url}")
 	Log.message("Urls going to be hit #{times} times")
-	
+
 	@base_url = base_url
     results = []
     ab_path = File.dirname(__FILE__) + '/../tools/ab.exe'
 
-
-    File.read(@dir + '/urls.txt').split(/\n/).each do |url|
+    File.read(@dir + '/urls.txt').split(/\n/).each do |line|
+      url = line.split(',')[0]
+      title = line.split(',')[1]
       full_url = @base_url + url
       output = AbOutputParser.new(@executor.execute("#{ab_path} -n #{times} -c 5 #{full_url}"))
-      Log.stat("#{url} - mean concurrent/request (ms)", output.mean_concurrent_time_per_request)
-      Log.stat("#{url} - mean/request (ms)", output.mean_time_per_request)
+      Log.stat("#{title}", output.mean_time_per_request)
       results << [full_url, output.mean_time_per_request, output.mean_concurrent_time_per_request]
     end
     write_to_output(results)

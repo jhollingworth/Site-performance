@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="864ee6f1-8103-4d34-af03-fc361c3ab0c5" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Dev\site_performance\specs\downloader_spec.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\site_performance\lib\downloader.rb" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/executor.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specs/site_performance_tester_spec.rb" afterPath="$PROJECT_DIR$/specs/site_performance_tester_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specs/result.csv" afterPath="$PROJECT_DIR$/specs/result.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/specs/urls.txt" afterPath="$PROJECT_DIR$/specs/urls.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/site_performance_tester.rb" afterPath="$PROJECT_DIR$/lib/site_performance_tester.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RakeFile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RakeFile" afterPath="$PROJECT_DIR$/RakeFile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/log.rb" afterPath="$PROJECT_DIR$/lib/log.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.yaml" afterPath="$PROJECT_DIR$/config.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/site_performance_tester.rb" afterPath="$PROJECT_DIR$/lib/site_performance_tester.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/urls.txt" afterPath="$PROJECT_DIR$/lib/urls.txt" />
+      <change type="DELETED" beforePath="C:\Dev\Toptable\build\site_performance\lib\downloader.rb" afterPath="" />
     </list>
     <ignored path="site_performance.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,10 +33,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="site_performance_tester.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="site_performance_tester.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/site_performance_tester.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="33" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
+            <state line="25" column="147" selection-start="724" selection-end="724" vertical-scroll-proportion="0.21942446">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/urls.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="83" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,7 +72,7 @@
       <file leaf-file-name="log.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/log.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="25" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+            <state line="9" column="109" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,16 +90,16 @@
       <file leaf-file-name="config.yaml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="28" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RakeFile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RakeFile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RakeFile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="68" selection-start="567" selection-end="567" vertical-scroll-proportion="0.58093524">
+            <state line="27" column="42" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,13 +122,13 @@
         <option value="$PROJECT_DIR$/specs/downloader_spec.rb" />
         <option value="$PROJECT_DIR$/lib/run.bat" />
         <option value="$PROJECT_DIR$/lib/downloader.rb" />
-        <option value="$PROJECT_DIR$/lib/urls.txt" />
         <option value="$PROJECT_DIR$/specs/urls.txt" />
         <option value="$PROJECT_DIR$/specs/site_performance_tester_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/log.rb" />
         <option value="$PROJECT_DIR$/lib/config.yaml" />
-        <option value="$PROJECT_DIR$/lib/site_performance_tester.rb" />
         <option value="$PROJECT_DIR$/lib/executor.rb" />
+        <option value="$PROJECT_DIR$/lib/urls.txt" />
+        <option value="$PROJECT_DIR$/lib/log.rb" />
+        <option value="$PROJECT_DIR$/lib/site_performance_tester.rb" />
         <option value="$PROJECT_DIR$/RakeFile" />
       </list>
     </option>
@@ -153,6 +159,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -187,14 +195,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
@@ -264,16 +270,35 @@
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="10" y="10" width="1660" height="1010" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992035" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992035" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18680641" sideWeight="0.66211605" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18618989" sideWeight="0.66211605" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31955308" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -281,6 +306,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -322,56 +348,52 @@
         <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/urls.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="15" selection-start="122" selection-end="122" vertical-scroll-proportion="0.20659722" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/specs/urls.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="69" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="1" column="69" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/specs/site_performance_tester_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="39" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="18" column="39" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/executor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="81" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/log.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+        <state line="9" column="109" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/urls.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="83" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="28" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/site_performance_tester.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="33" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/executor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="81" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RakeFile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="68" selection-start="567" selection-end="567" vertical-scroll-proportion="0.58093524">
+        <state line="27" column="42" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/site_performance_tester.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="147" selection-start="724" selection-end="724" vertical-scroll-proportion="0.21942446">
           <folding />
         </state>
       </provider>
